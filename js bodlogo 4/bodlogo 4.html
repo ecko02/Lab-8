@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Bodlogo 4</title>
+</head>
+<body>
+<h1>JS Bodlogo 4</h1>
+<!-- Байшин 9 давхар, 3 орцтой, давхартаа 4 айлтай бол гараас өгсөн тоот нь хэддүгээр орцны хэддүгээр давхарын хэд дэх хаалга вэ?-->
+<script>
+   var toot=prompt("Garaas toogoo oruulna uu:");
+   document.write('<h2>'+toot+'</h2>')
+  if (toot%4){
+    var haalga=toot%4;
+    var orts=parseInt(toot/36)+1;
+    var dawhar=parseInt(parseInt(toot/4)%9)+1;
+  }
+  else{
+    var haalga=4;
+    if(toot%9){
+      orts=parseInt(toot/36)+1;
+      dawhar=parseInt(toot/4)%9;
+    }
+    else{
+      orts=parseInt(toot/36);
+      dawhar=9;
+    }
+  }
+  document.write(toot+"toot ni "+ orts+"-r ortsnii "+dawhar+"-r dawhriin "+haalga+"deh haalga");
+  
+
+</script>
+</body>
+</html>

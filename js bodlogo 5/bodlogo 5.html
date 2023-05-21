@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Bodlogo 5</title>
+	<!-- Вэб сайтруу өглөө ороход ногоон дөрвөлжин дүрсийг зүүн дээд буланд, орой ороход улаан дөрвөлжин дүрсийг баруун доод буланд харагдуул.-->
+</head>
+<style>
+	.square {
+		position: fixed;
+		width: 100px;
+		height: 100px;
+	
+	}
+	.green {
+		background-color: green;
+		top: 0;
+		left: 0;
+	}
+	.red {
+		background-color: red;
+		bottom: 0;
+		right: 0;
+	}
+</style>
+<body>
+	<div class="square green"> </div>
+	
+	<script>
+		//garas ugsun toog anhnii too mun esehiig shalga
+		var date = new Date();
+		var hour = date.getHours();
+		var square = document.querySelector(".square");
+		
+		if(hour >= 6 && hour < 18) {
+			square.classList.add("green");
+			square.classList.remove("red");
+		} else {
+			square.classList.add("red");
+			square.classList.remove("green");
+		}
+	</script>
+</body>
+</html>
+

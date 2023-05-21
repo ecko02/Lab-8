@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Bodlogo 3</title>
+</head>
+<body>
+  <!--Чоно 25 км/ц хурдтай, туулай 18 км/ц хурдтай. Гараас өгсөн зайтай байхад хэдэн минут хэдэн секундын дараа гэхэд гүйцэх вэ?-->
+  <h1>JS Bodlogo 3</h1>
+    <script>
+      var v=prompt('Garaas zaigaa oruulna uu');
+      document.write('<h2>'+v+'</h2>');
+      v=v*60;
+      s=parseInt(v/7);
+      v=v%7;
+      l=parseInt(v*60/7);
+      document.write('<br>');
+      document.write('Chono tuulaig guitseh hugatsaa n: '+v+'minut'+l+'second');
+
+    </script>
+</body>
+</html>
